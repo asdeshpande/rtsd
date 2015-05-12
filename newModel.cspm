@@ -42,9 +42,15 @@
         <configuration xsi:type="cpp:CPPCodeBlockConfiguration"/>
       </objects>
       <objects xsi:type="csp:CSPWriter" name="Pwriter1ch2con2" constraints="826,510,40,40" compositionalRelations="//@objects.0/@submodel/@compositionalRelations.2" link="//@objects.0/@submodel/@links.3" variable="//@objects.0/@submodel/@properties.0/@variables.1"/>
-      <objects xsi:type="csp:CSPCompositionalGroup" name="SEQUENTIAL1" constraints="273,77,643,246" compositionalRelations="//@objects.0/@submodel/@compositionalRelations.6" relations="//@objects.0/@submodel/@compositionalRelations.4"/>
-      <objects xsi:type="csp:CSPCompositionalGroup" name="SEQUENTIAL2" constraints="273,359,643,246" compositionalRelations="//@objects.0/@submodel/@compositionalRelations.6" relations="//@objects.0/@submodel/@compositionalRelations.5"/>
-      <objects xsi:type="csp:CSPCompositionalGroup" name="PARALLEL" constraints="248,52,693,578" relations="//@objects.0/@submodel/@compositionalRelations.6"/>
+      <objects xsi:type="csp:CSPCompositionalGroup" name="SEQUENTIAL1" constraints="273,77,643,246" compositionalRelations="//@objects.0/@submodel/@compositionalRelations.6" relations="//@objects.0/@submodel/@compositionalRelations.4">
+        <properties xsi:type="csp:CSPRecursionProperty"/>
+      </objects>
+      <objects xsi:type="csp:CSPCompositionalGroup" name="SEQUENTIAL2" constraints="273,359,643,246" compositionalRelations="//@objects.0/@submodel/@compositionalRelations.6" relations="//@objects.0/@submodel/@compositionalRelations.5">
+        <properties xsi:type="csp:CSPRecursionProperty"/>
+      </objects>
+      <objects xsi:type="csp:CSPCompositionalGroup" name="PARALLEL" constraints="248,52,693,578" relations="//@objects.0/@submodel/@compositionalRelations.6">
+        <properties xsi:type="csp:CSPRecursionProperty"/>
+      </objects>
       <properties xsi:type="csp:CSPVariablesProperty">
         <variables name="someValue" type="//@properties.0/@units.0"/>
         <variables name="anotherValue" type="//@properties.0/@units.0"/>
